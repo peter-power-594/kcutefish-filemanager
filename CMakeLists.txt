@@ -90,11 +90,11 @@ target_link_libraries(cutefish-filemanager
   # FishUI
 )
 
-file(GLOB TS_FILES translations/*.ts)
-qt5_create_translation(QM_FILES ${TS_FILES})
-add_custom_target(translations DEPENDS ${QM_FILES} SOURCES ${TS_FILES})
-add_dependencies(cutefish-filemanager translations)
+#file(GLOB TS_FILES translations/*.ts)
+#qt5_create_translation(QM_FILES ${TS_FILES})
+#add_custom_target(translations DEPENDS ${QM_FILES} SOURCES ${TS_FILES})
+#add_dependencies(cutefish-filemanager translations)
 
 install(TARGETS cutefish-filemanager RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR})
 install(FILES cutefish-filemanager.desktop DESTINATION "/usr/share/applications")
-install(FILES ${QM_FILES} DESTINATION /usr/share/cutefish-filemanager/translations)
+#install(FILES ${QM_FILES} DESTINATION /usr/share/cutefish-filemanager/translations)

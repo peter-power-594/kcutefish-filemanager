@@ -4,26 +4,12 @@ Cutefish File Manager, simple to use, beautiful, and retain the classic PC inter
 
 ![screenshot](screenshots/Screenshot_20211025_151224.png)
 
-## Dependencies
-
-### Ubuntu
-
-```
-sudo apt install equivs curl git devscripts lintian build-essential automake autotools-dev --no-install-recommends
-
-sudo mk-build-deps -i -t "apt-get --yes" -r
-```
-
-### Debian
-
-```
-sudo apt install build-essential cmake extra-cmake-modules libkf5kio-dev libkf5solid-dev libkf5windowsystem-dev libkf5config-dev qtbase5-dev qtbase5-private-dev qtdeclarative5-dev qtquickcontrols2-5-dev qttools5-dev qttools5-dev-tools
-```
-
-### ArchLinux
+## OpenMandriva Dependencies
 
 ```shell
-sudo pacman -S extra-cmake-modules qt5-base qt5-quickcontrols2 taglib kio
+sudo dnf in task-develop
+sudo dnf install extra-cmake-modules lib64KF5KIO-devel
+
 ```
 
 ## Build
