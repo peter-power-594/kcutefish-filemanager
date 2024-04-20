@@ -1,6 +1,6 @@
 # File Manager
 
-Cutefish File Manager, simple to use, beautiful, and retain the classic PC interactive design. 
+Cutefish File Manager, simple to use, beautiful, and retain the classic PC interactive design.
 
 ![screenshot](screenshots/Screenshot_20211025_151224.png)
 
@@ -25,6 +25,13 @@ make
 
 ```shell
 sudo make install
+```
+
+## Uninstall
+
+```shell
+rm /usr/bin/cutefish-filemanager
+rm /usr/share/applications/cutefish-filemanager.desktop
 ```
 
 ## License
